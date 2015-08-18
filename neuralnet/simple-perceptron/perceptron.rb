@@ -73,7 +73,8 @@ module Perceptron
       a1 = (@@w11*x1+@@w12*x2-@@w10) >= 0 ? 1 : 0
       a2 = (@@w21*x1+@@w22*x2-@@w20) >= 0 ? 1 : 0
       y = (@v1*a1+@v2*a2-@v0) >= 0 ? 1 : 0
-      puts "x1 = #{x1}, x2 = #{x2}, t = #{t}, y = #{y}"
+      result = (y==t) ? "OK" : "NG"
+      puts "x1 = #{x1}, x2 = #{x2}, t = #{t}, y = #{y}  ### [ #{result} ] ###"
     end
   end
 end
