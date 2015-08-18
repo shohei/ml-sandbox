@@ -16,8 +16,7 @@ class OrPerceptron < Perceptron::Base
 
 end
 
-a = OrPerceptron.new
-a.train
-a.test
-
-
+# a = OrPerceptron.new
+# a.train
+# a.test
+#

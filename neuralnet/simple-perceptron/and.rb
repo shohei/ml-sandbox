@@ -16,8 +16,8 @@ class AndPerceptron < Perceptron::Base
 
 end
 
-a = AndPerceptron.new
-a.train
-a.test
+# a = AndPerceptron.new
+# a.train
+# a.test
 
 

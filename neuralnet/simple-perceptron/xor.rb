@@ -16,7 +16,7 @@ class XorPerceptron < Perceptron::Base
 
 end
 
-a = XorPerceptron.new
-a.train
-a.test
+# a = XorPerceptron.new
+# a.train
+# a.test
 
