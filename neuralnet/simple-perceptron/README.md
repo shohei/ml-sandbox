@@ -1,5 +1,10 @@
 単純パーセプトロン
 ==============
+V1, V2学習器
+
+![image](https://cloud.githubusercontent.com/assets/855816/9326140/a4f2dd04-45d2-11e5-89fe-87fb97e545dc.png)
+
+
 真理値表
 ------------
 ### AND
