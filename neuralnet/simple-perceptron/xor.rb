@@ -1,9 +1,9 @@
 require './perceptron.rb'
 
-class AndPerceptron < Perceptron::Base
+class XorPerceptron < Perceptron::Base
   #[x1,x2,t]=[0,0,0],[0,1,0],[1,0,0],[1,1,1]
-  @@train_set  = [[0,0,0],[0,1,0],[1,0,0],[1,1,1]]
-  @@test_set = [[0,0,0],[0,1,0],[1,0,0],[1,1,1]]
+  @@train_set  = [[0,0,0],[0,1,1],[1,0,1],[1,1,0]]
+  @@test_set = [[0,0,0],[0,1,1],[1,0,1],[1,1,0]]
   @@epsilon = 0.05
   
   #[x1,x2,t]=[0,0,0],[0,1,0],[1,0,0],[1,1,1]
@@ -16,8 +16,7 @@ class AndPerceptron < Perceptron::Base
 
 end
 
-a = AndPerceptron.new
+a = XorPerceptron.new
 a.train
 a.test
-
 
