@@ -1,4 +1,4 @@
-多層型ニューラルネットワーク
+多層パーセプトロン
 ==============
 
 ![image](https://cloud.githubusercontent.com/assets/855816/9350545/beccd12a-468c-11e5-9077-770c157e8457.png)

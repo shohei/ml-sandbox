@@ -1,4 +1,4 @@
-module Perceptron
+module Perceptron 
   class Base 
     #w10,w20(h1,h2): 中間層しきい値 : 0.5 固定
     #v0(theta1): 出力層しきい値: 0.5 ~ 1.0の任意の値で初期化
