@@ -3,7 +3,6 @@
 
 ![image](https://cloud.githubusercontent.com/assets/855816/9350545/beccd12a-468c-11e5-9077-770c157e8457.png)
 
-
 - 階層型ニューラルネットワークの一種
 - （ローゼンブラットの）パーセプトロン（S-A-R層）では解けない問題があった
 - Hebbの学習則ではなく、誤差逆伝播法（Back propagation）を利用
