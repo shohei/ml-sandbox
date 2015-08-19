@@ -10,20 +10,34 @@ class AndPerceptron < Perceptron::Base
   #t: 教師信号(0 or 1)
   #[x1,x2,t]=[0,0,0],[0,1,0],[1,0,0],[1,1,1]
   def initialize
+    @stop = 0.00005
     @train_set  = [[0,0,0],[0,1,0],[1,0,0],[1,1,1]]
     @test_set = [[0,0,0],[0,1,0],[1,0,0],[1,1,1]]
-    @epsilon = 0.05
-    @w10 = 0.5
-    @w20 = 0.5
-    @w11 =  1.0
-    @w12 = -0.5
-    @w21 = -0.5
-    @w22 = 1.0 
-    @v0 = rand(0.5...1.0)
+    @eta = 0.05
+
+    @x0=1
+    @h0=1
+
+    @v0 = rand(-0.5...0.5)
     @v1 = rand(-0.5...0.5)
     @v2 = rand(-0.5...0.5)
-    puts "initial values: v1: #{@v1}, v2: #{@v2}"
+
+    @w10 = rand(-0.5...0.5) 
+    @w11 = rand(-0.5...0.5) 
+    @w12 = rand(-0.5...0.5) 
+
+    @w20 = rand(-0.5...0.5) 
+    @w21 = rand(-0.5...0.5) 
+    @w22 = rand(-0.5...0.5)
+
+    puts "initial values: "
+    puts "               v0:#{@v0}, v1: #{@v1}, v2: #{@v2}"
+    puts "               w10:#{@w10}, w11: #{@w11}, w12: #{@w12}"
+    puts "               w20:#{@w20}, w21: #{@w21}, w22: #{@w22}"
   end
 
 end
 
+andP = AndPerceptron.new
+andP.train
+andP.test

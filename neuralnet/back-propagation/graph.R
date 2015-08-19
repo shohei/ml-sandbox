@@ -1,0 +1,6 @@
+library(ggplot2)
+library(reshape2)
+df <- read.csv("output.csv",header=T)
+df.melt <- melt(df,id.vars="count",measure.vars=c("v0","v1","v2","w10","w11","w12","w20","w21","w22"))
+ggplot(df.melt)+geom_line(mapping=aes(x=count,y=value,group=variable,col=variable))
+Sys.sleep(1000)
