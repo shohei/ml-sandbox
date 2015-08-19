@@ -1,6 +1,6 @@
 require './perceptron.rb'
 
-class AndPerceptron < Perceptron::Base
+class OrPerceptron < Perceptron::Base
   #w10,w20(h1,h2): 中間層しきい値 : 0.5 固定
   #v0(theta1): 出力層しきい値: 0.5 ~ 1.0の任意の値で初期化
   #w11,w12,w21,w22: 中間層結合荷重
@@ -10,9 +10,9 @@ class AndPerceptron < Perceptron::Base
   #t: 教師信号(0 or 1)
   #[x1,x2,t]=[0,0,0],[0,1,0],[1,0,0],[1,1,1]
   def initialize
-    @stop = 0.005
-    @train_set  = [[0,0,0],[0,1,0],[1,0,0],[1,1,1]]
-    @test_set = [[0,0,0],[0,1,0],[1,0,0],[1,1,1]]
+    @stop = 0.0005
+    @train_set  = [[0,0,0],[0,1,1],[1,0,1],[1,1,1]]
+    @test_set = [[0,0,0],[0,1,1],[1,0,1],[1,1,1]]
     @eta = 0.05
 
     @v0 = 1 
@@ -35,6 +35,6 @@ class AndPerceptron < Perceptron::Base
 
 end
 
-# andP = AndPerceptron.new
-# andP.train
-# andP.test
+# orP = OrPerceptron.new
+# orP.train
+# orP.test

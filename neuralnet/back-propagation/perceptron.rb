@@ -64,8 +64,8 @@ module Perceptron
     end
 
     def train
-      CSV.open("output.csv","w") do |csv|
-        csv << %w(count v0 v1 v2 w10 w11 w12 w20 w21 w22)
+      # CSV.open("output.csv","w") do |csv|
+      #   csv << %w(count v0 v1 v2 w10 w11 w12 w20 w21 w22)
         @count = 0
         loop do
           @train_data = @train_set.sample
@@ -73,11 +73,11 @@ module Perceptron
           @x2 = @train_data[1]
           @t = @train_data[2]
           single_train(@x1,@x2,@t)
-          csv << [@count,@v0,@v1,@v2,@w10,@w11,@w12,@w20,@w21,@w22]
+          # csv << [@count,@v0,@v1,@v2,@w10,@w11,@w12,@w20,@w21,@w22]
           break if converged()
           @count += 1
         end
-      end
+      # end
   
         # puts "train completed: v1: #{@v1}, v2: #{@v2}"
         puts "train completed"
