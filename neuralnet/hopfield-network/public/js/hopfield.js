@@ -19,4 +19,40 @@ $(function(){
     })
   });
 
+  $("#btn-init").on("click",function(){
+     $.ajax({
+        type: 'POST',
+        url: '/initialize',
+        data: "data",
+        success: "success"
+     });
+  });
+
+  $("#btn-rand").on("click",function(){
+     $.ajax({
+        type: 'POST',
+        url: '/random',
+        data: "data",
+        success: "success"
+     });
+  });
+
+  $("#btn-memory").on("click",function(){
+     $.ajax({
+        type: 'POST',
+        url: '/memorize',
+        data: "data",
+        success: "success"
+     });
+  });
+
+  $("#btn-img").on("click",function(){
+     $.ajax({
+        type: 'POST',
+        url: '/imagine',
+        data: "data",
+        success: "success"
+     });
+  });
+
 });
