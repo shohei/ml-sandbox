@@ -4,8 +4,23 @@
   %title Hopfield network 
   %script{src: "/js/jquery.min.js"}
   %script{src: "/js/hopfield.js"}
+  %link{rel: :stylesheet, href: "/css/bootstrap.min.css"}
+  %link{rel: :stylesheet, href: "/css/main.css"}
  %body
   %h1 Hopfield Network 
-  %p
+
+  %table
+   - 5.times.to_a.each do |i|
+    %tr  
+     - 5.times.to_a.each do |j|
+      %td= (5*i)+(j+1)
+
+
+
+
+
+
+
+
 
 
