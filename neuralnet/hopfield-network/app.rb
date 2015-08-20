@@ -9,6 +9,12 @@ configure do
 end
 
 get '/' do
+  @NUM = 5
+  haml :index
+end
+
+get '/:num' do
+  @NUM = (params['num']).to_i
   haml :index
 end
 

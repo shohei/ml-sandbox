@@ -10,10 +10,10 @@
   %h1 Hopfield Network 
 
   %table
-   - 5.times.to_a.each do |i|
+   - @NUM.times.to_a.each do |i|
     %tr  
-     - 5.times.to_a.each do |j|
-      - @current = (5*i)+(j+1)
+     - @NUM.times.to_a.each do |j|
+      - @current = (@NUM*i)+(j+1)
       %td{:id => "cell-#{@current}", "data-clicked" => "false"}= @current
 
   #controls
