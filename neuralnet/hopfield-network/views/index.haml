@@ -13,12 +13,8 @@
    - 5.times.to_a.each do |i|
     %tr  
      - 5.times.to_a.each do |j|
-      %td= (5*i)+(j+1)
-
-
-
-
-
+      - @current = (5*i)+(j+1)
+      %td{:id => "cell-#{@current}", "data-clicked" => "false"}= @current
 
 
 
